@@ -15,6 +15,8 @@ namespace Cable.Data
 
         [Required]
         public string CustomerName { get; set; }
+
+        [Required]
         public string Address { get; set; }
 
         [Required]
