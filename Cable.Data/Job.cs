@@ -11,20 +11,22 @@ namespace Cable.Data
     public class Job
     {
         [Key]
-        public int JobId { get; set; }
-
-        [Required]
-        public string CustomerName { get; set; }
-
-        [Required]
-        public string Address { get; set; }
-
-        [Required]
+        public int JobId { get; set; }        
+        public string JobName { get; set; }
+        public string JobType { get; set; }
         public int AccountNumber { get; set; }
 
         [ForeignKey(nameof(User))]
         public string UserId { get; set; }
-        public virtual ApplicationUser User { get; set; }
-        public List<Task> Tasks { get; set; } = new List<Task>();
+        public virtual ApplicationUser User { get; set; }        
+        public TaskType TaskOrder { get; set; }
+
+        [Required]
+        [ForeignKey(nameof(Customer))]
+        public int CustomerId { get; set; }
+        public virtual Customer Customer { get; set; }
+
+        [Required]
+        public DateTime JobDate { get; set; }
     }
 }

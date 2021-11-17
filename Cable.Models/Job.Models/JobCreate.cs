@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Cable.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -11,16 +12,16 @@ namespace Cable.Models
     public class JobCreate
     {
         [Required]
-        public string CustomerName { get; set; }
-        public string Address { get; set; }
-
-        [Required]
-        public int AccountNumber { get; set; }
+        public int CustomerId { get; set; }
 
         [Required]
         public DateTime JobDate { get; set; }
 
         [Required]
+        public string JobType { get; set; }
+
+        public TaskType TaskOrder { get; set; }
+
 
 
 

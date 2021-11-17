@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cable.Models", "Cable.Model
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cable.Services", "Cable.Services\Cable.Services.csproj", "{16D8F7A7-8ECD-4634-8E55-AA687C3C19A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cable.Contracts", "Cable.Contracts\Cable.Contracts.csproj", "{2288A72D-F22B-458E-A7CC-822C9430134D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{16D8F7A7-8ECD-4634-8E55-AA687C3C19A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16D8F7A7-8ECD-4634-8E55-AA687C3C19A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16D8F7A7-8ECD-4634-8E55-AA687C3C19A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2288A72D-F22B-458E-A7CC-822C9430134D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2288A72D-F22B-458E-A7CC-822C9430134D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2288A72D-F22B-458E-A7CC-822C9430134D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2288A72D-F22B-458E-A7CC-822C9430134D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
